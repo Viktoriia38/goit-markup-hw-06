@@ -795,6 +795,8 @@ body {
         
     background-color: var(--contrast-color);
     cursor: pointer;
+
+    transition: fill 250ms;
 }
 
 .modal-close:hover,
@@ -812,9 +814,6 @@ body {
     min-width: 18px;
 }
 
-.modal-form {
-    margin-bottom: 30px;
-}
 
 .modal-title {
     font-weight: 700;
@@ -837,6 +836,8 @@ body {
     font-size: 16px;
     outline: unset;
     padding-left: 42px;
+
+    transition: border 250ms;
 }
 
  .modal-input:focus {
@@ -877,7 +878,8 @@ body {
     position: absolute;
     left: 12px;
     bottom: 11px;
-    fill    : var(--primary-text-color);
+
+    transition: fill 250ms;
 }
 
     .modal-comment:focus {

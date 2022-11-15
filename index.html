@@ -446,12 +446,13 @@
         <div class="connect">
           <h2 class="connect-title">Підпишіться на розсилку</h2>
           <form class="connect-form">
-            <label for="subscribe-email"></label>
+            <label for="connect-email"></label>
             <input
               type="email"
               class="footer-input"
               name="user-email"
               placeholder="E-mail"
+              id="connect-email"
               required
             />
             <button type="submit" class="connect-button">
@@ -475,12 +476,13 @@
         <form class="modal-form">
           <ul class="modal-list list">
             <li class="modal-item">
-              <label for="user name" class="modal-label">Ім'я</label>
+              <label for="user-name" class="modal-label">Ім'я</label>
               <input
                 type="text"
                 class="modal-input"
                 name="user-name"
                 minlength="2"
+                id="user-name"
                 required
               />
               <svg class="icon-modal" width="18" height="18">
@@ -489,17 +491,24 @@
             </li>
             <li class="modal-item">
               <label for="tel" class="modal-label">Телефон</label>
-              <input type="tel" class="modal-input" name="user-tel" required />
+              <input
+                type="tel"
+                class="modal-input"
+                name="user-tel"
+                id="tel"
+                required
+              />
               <svg class="icon-modal" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </li>
             <li class="modal-item">
-              <label for="user email" class="modal-label">Пошта</label>
+              <label for="user-email" class="modal-label">Пошта</label>
               <input
                 type="email"
                 class="modal-input"
                 name="user-email"
+                id="user-email"
                 required
               />
               <svg class="icon-modal" width="18" height="18">
@@ -507,7 +516,7 @@
               </svg>
             </li>
             <li class="modal-item">
-              <label for="user comment" class="text">Коментар</label>
+              <label for="user-comment" class="text">Коментар</label>
               <textarea
                 name="user-comment"
                 class="modal-comment"
