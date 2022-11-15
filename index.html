@@ -444,20 +444,22 @@
           </ul>
         </div>
         <div class="connect">
-        <h2 class="connect-title">Підпишіться на розсилку</h2>
-        <span class="connect-form">
-                <input
-                type="email"
-                class="footer-input"
-                name="user-email"
-                placeholder="E-mail"
-                required
-              />
-              <button class="connect-button">Підписатися</button>
+          <h2 class="connect-title">Підпишіться на розсилку</h2>
+          <form class="connect-form">
+            <input
+              type="email"
+              class="footer-input"
+              name="user-email"
+              placeholder="E-mail"
+              required
+            />
+            <button type="submit" class="connect-button">
+              Підписатися
               <svg class="icon-button" width="24" height="24">
-              <use href="./images/icons.svg#icon-icon-send"></use>
+                <use href="./images/icons.svg#icon-icon-send"></use>
               </svg>
-        </span>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -470,7 +472,7 @@
         </button>
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
-          <ul class="list">
+          <ul class="modal-list list">
             <li class="modal-item">
               <label for="user name" class="modal-label">Ім'я</label>
               <input
@@ -513,19 +515,24 @@
                 rows="10"
                 placeholder="Введіть текст"
                 required
-              >
-Введіть текст</textarea
-              >
+              ></textarea>
             </li>
           </ul>
           <div class="privacy">
-            <input type="checkbox" name="privacy" class="input-check visually-hidden" value="true" id="privacy">
-            <label for="privacy" class="privacy-text">Погоджуюся з розсилкою та приймаю  <a class="privacy-rules"
-          href=""> Умови договору</a></label>
+            <input
+              type="checkbox"
+              name="privacy"
+              class="input-check visually-hidden"
+              value="true"
+              id="privacy"
+            />
+            <label for="privacy" class="privacy-text"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="privacy-rules" href=""> Умови договору</a></label
+            >
           </div>
+          <button class="modal-button" type="submit">Відправити</button>
         </form>
-        <button class="modal-button"
-        type="submit">Відправити</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
